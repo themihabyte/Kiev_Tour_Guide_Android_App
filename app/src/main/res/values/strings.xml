@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Kiev Tour Guide</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_sightseeings">Sightseeings</string>
+    <string name="category_hotels">Hotels</string>
+    <string name="category_parks">Parks</string>
+    <string name="button_voice">Speak</string>
 </resources>
