@@ -9,4 +9,25 @@
         <item name="colorSecondary">@color/colorLightPrimary</item>
     </style>
 
+    <style name="PlaceNameTextStyle" parent="AppTheme">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TabTextStyle" parent="AppTheme">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PlaceDescriptionTextStyle" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="PlaceInformationTextStyle" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
 </resources>
