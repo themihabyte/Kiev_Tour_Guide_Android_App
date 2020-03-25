@@ -2,47 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <RelativeLayout
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:paddingTop="8dp"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="3">
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/place_name"
+            style="@style/PlaceNameTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_alignParentTop="true"
+            android:layout_height="60dp"
             tools:text="The statue of Motherland" />
-        <LinearLayout
+
+        <TextView
+            android:id="@+id/place_description"
+            style="@style/PlaceDescriptionTextStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentBottom="true">
+            android:layout_height="100dp"
+            android:visibility="gone"
+            tools:text="A lot ogfgafdgsdfgssdfgsfgsfdgs
+ssdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfgsdfg
+sdfgsdfgsdfgsdfgsdfgsdfgsdfg" />
+
+        <LinearLayout
+            android:id="@+id/layout_information"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/place_address"
+                style="@style/PlaceInformationTextStyle"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="4"
-                tools:text="Kiev, Pecherskaya 37B street"/>
-            <TextView
-                android:id="@+id/place_distance"
+                android:layout_weight="5"
+                tools:text="Kiev, Pecherskaya 37B street" />
+
+            <Button
+                android:id="@+id/place_button_voice"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                tools:text="850m"/>
+                android:layout_weight="2"
+                android:text="@string/button_voice"
+                android:textSize="12sp"/>
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/place_photo"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2" />
+        android:layout_weight="2"/>
 </LinearLayout>
