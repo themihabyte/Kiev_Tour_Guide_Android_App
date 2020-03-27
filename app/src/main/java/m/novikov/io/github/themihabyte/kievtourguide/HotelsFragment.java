@@ -16,12 +16,10 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class HotelsFragment extends Fragment {
     private AudioManager mAudioManager;
     private AudioFocusRequest mAudioFocusRequest;
+    private PlaceAdapter mPlaceAdapter;
 
     public HotelsFragment() {
         // Required empty public constructor
@@ -50,9 +48,9 @@ public class HotelsFragment extends Fragment {
                         "5-7/29 T. Shevchenka Blvd, Pushkinska St",
                         R.drawable.hotel_premier_palace,
                         R.raw.hotel_premier_palace)));
-        PlaceAdapter placeAdapter = new PlaceAdapter(getActivity(), places);
+        mPlaceAdapter = new PlaceAdapter(getActivity(), places);
         ListView listView = rootView.findViewById(R.id.place_list);
-        listView.setAdapter(placeAdapter);
+        listView.setAdapter(mPlaceAdapter);
 
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
         AudioAttributes audioAttributes = new AudioAttributes.Builder()
@@ -62,13 +60,14 @@ public class HotelsFragment extends Fragment {
         mAudioFocusRequest = new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN_TRANSIENT)
                 .setAudioAttributes(audioAttributes)
                 .setAcceptsDelayedFocusGain(true)
-                .setOnAudioFocusChangeListener(placeAdapter.onAudioFocusChangeListener()).build();
+                .setOnAudioFocusChangeListener(mPlaceAdapter.onAudioFocusChangeListener()).build();
         return rootView;
     }
 
     @Override
     public void onPause() {
         super.onPause();
+        mPlaceAdapter.releaseMediaPlayer();
         mAudioManager.abandonAudioFocusRequest(mAudioFocusRequest);
     }
 }
