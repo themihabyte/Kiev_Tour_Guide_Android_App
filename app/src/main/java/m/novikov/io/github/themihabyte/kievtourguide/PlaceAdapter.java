@@ -86,7 +86,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         return listItemView;
     }
 
-    private void releaseMediaPlayer() {
+    void releaseMediaPlayer() {
         if (mMediaPlayer != null) {
             mMediaPlayer.release();
             mMediaPlayer = null;
