@@ -75,7 +75,7 @@ public class Place {
         return this.mPhotoResourceID != NO_PHOTO;
     }
 
-    public boolean isHaveVoice(){
+    public boolean isHaveVoice() {
         return this.mVoiceResourceID != NO_VOICE;
     }
 }
