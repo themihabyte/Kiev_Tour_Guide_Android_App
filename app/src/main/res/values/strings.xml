@@ -5,4 +5,92 @@
     <string name="category_hotels">Hotels</string>
     <string name="category_parks">Parks</string>
     <string name="button_voice">Speak</string>
+    <string name="hotel_ukraine_description">The hotel was built in 1961 as
+        the Hotel Moscow in a location which originally was occupied
+        by Kiev`s first skyscraper, the Ginzburg House.
+    </string>
+    <string name="hotel_hilton_description">
+        The Hilton Kyiv hotel boasts a convenient location within
+        walking distance of many major Kiev attractions such as
+        Shevchenko Boulevard and the Old Botanical Gardens.
+    </string>
+    <string name="hotel_hyatt_regency_description">
+        Located in the heart of the political and business capital of Ukraine
+    </string>
+    <string name="hotel_premier_palace_description">
+        Premier Palace Hotel is a hotel in the centre of Kyiv.
+        It is only 100 meters from Khreshchatyk – the main street of the capital.
+    </string>
+    <string name="park_taras_shevchenko_park_description">
+        One of Kiev`s oldest parks is Shevchenko Park,
+        which is located near the Priemer Palace Hotel.
+        Opposite the park is the main building of the Taras Shevchenko University.
+    </string>
+    <string name="park_park_of_eternal_glory">
+        The Park of Eternal Glory is a park in Kiev, Ukraine.
+        It is located between Lavrska Street and the Dnieper Descent,
+        and is surrounded by the Old Kiev-Pecherska fortress, and the Glory Square.
+    </string>
+    <string name="park_park_kioto_description">
+        This park was founded to establish
+        friendship between the capital of Ukraine
+        Kiev and the capital of Japan Kioto in 1972
+    </string>
+    <string name="park_feofaniya_park_description">
+        Feofaniya is a park located in the historical neighborhood on a tract
+        near the southern outskirts of Kiev, the capital of Ukraine.
+        The neighborhood is located in the administrative Holosiivskyi Raion
+        amidst the neighborhoods of Holosiiv, Teremky, Pyrohiv and Khotiv.
+        The park`s total area is about 1.5 km squared.
+    </string>
+
+    <string name="restaurant_meatbusters_description">
+        In the menu of MEATBUSTERS are (spare ribs) pork and beef ribs of BBQ,
+        beef brisket, turkey and also smoked sausages, sandwich of pulled pork.
+        If you ever thought you couldn`t find American BBQ in Kyiv,
+        think again! MeatBusters is the nearest to genuine BBQ I`ve had,
+        even by US standards
+    </string>
+    <string name="restaurant_shoti_restaurant">
+        Shoti is a Georgian haute-cuisine restaurant.
+        How could khachapuri, khinkali or lobio be haute-cuisine you
+        may ask. Same as Robuchon`s mashed potatoes or Patterson`s
+        beetroot "rose". Haute-cusine doesn`t need to consist of extravagant
+        ingredients.
+    </string>
+    <string name="restaurant_bao_description">
+        Also known as steamed buns or baozi (包子),
+        bao is a complete meal conveniently packed away
+        in a white, warm, soft bun.
+    </string>
+    <string name="restaurant_beef_description">
+        A premium restaurant in the very heart of Kiev.
+        A combination of meat and wine is a main specialization
+        of the restaurant. Its menu generously offers American
+        and European cuisines. The restaurant serves beef, pork,
+        lamb, ostrich and duck among the wide selection of meat.
+    </string>
+
+    <string name="sightseeing_kiev_pechersk_lavra_description">
+        Kiev Pechersk Lavra, also known as the Kiev Monastery of the Caves,
+        is a historic Orthodox Christian monastery which gave its name to one
+        of the city districts where it is located in Kiev
+    </string>
+    <string name="sightseeing_the_motherland_monument_description">
+        The Motherland Monument is a monumental statue in Kiev,
+        the capital of Ukraine. The sculpture is a part of the National
+        Museum of the History of Ukraine in the Second World War.
+    </string>
+    <string name="sightseeing_golden_gate_description">
+        The Golden Gate of Kyiv was the main gate in the 11th century
+        fortifications of Kyiv, the capital of Kievan Rus`.
+        It was named in imitation of the Golden Gate of Constantinople.
+        The structure was dismantled in the Middle Ages, leaving few vestiges
+        of its existence.
+    </string>
+    <string name="sightseeing_gorodetsky_house_description">
+        House with Chimaeras or Horodecki House is an Art Nouveau building
+        located in the historic Lypky neighborhood of Kiev,
+        the capital of Ukraine.
+    </string>
 </resources>
