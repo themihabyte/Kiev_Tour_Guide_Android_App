@@ -33,20 +33,23 @@ public class HotelsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
         final ArrayList<Place> places = new ArrayList<>(Arrays.asList(
-                new Place("Hotel Ukraine", "The hotel " +
-                        "was built in 1961 as the Hotel" +
-                        " \"Moscow\" in a location which originally" +
-                        " was occupied by Kiev's first skyscraper, the Ginzburg House.",
-                        "Vulytsya Instytutsʹka, 4", R.drawable.hotel_ukraine, R.raw.hotel_ukraine),
-                new Place("Hilton", "The Hilton Kyiv hotel boasts a convenient" +
-                        " location within walking distance of many major Kiev" +
-                        " attractions such as Shevchenko Boulevard and the Old" +
-                        " Botanical Gardens.", "Tarasa Shevchenko Blvd, 30",
+                new Place("Hotel Ukraine",
+                        getString(R.string.hotel_ukraine_description),
+                        "Vulytsya Instytutsʹka, 4",
+                        R.drawable.hotel_ukraine, R.raw.hotel_ukraine),
+                new Place("Hilton",
+                        getString(R.string.hotel_hilton_description),
+                        "Tarasa Shevchenko Blvd, 30",
                         R.drawable.hotel_hilton, R.raw.hotel_hilton),
-                new Place("Hyatt Regency", "Located in the heart of the" +
-                        " political and business capital of Ukraine",
+                new Place("Hyatt Regency",
+                        getString(R.string.hotel_hyatt_regency_description),
                         "Ally Tarasovoi St, 5", R.drawable.hotel_hyatt_regency,
-                        R.raw.hotel_hyatt_regency)));
+                        R.raw.hotel_hyatt_regency),
+                new Place("Premier Palace",
+                        getString(R.string.hotel_premier_palace_description),
+                        "5-7/29 T. Shevchenka Blvd, Pushkinska St",
+                        R.drawable.hotel_premier_palace,
+                        R.raw.hotel_premier_palace)));
         PlaceAdapter placeAdapter = new PlaceAdapter(getActivity(), places);
         ListView listView = rootView.findViewById(R.id.place_list);
         listView.setAdapter(placeAdapter);
